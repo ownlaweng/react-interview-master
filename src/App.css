@@ -390,3 +390,50 @@
   font-size: 12px;
   margin-top: 4px; /* ลดระยะห่างด้านบนของ <p> */
 }
+
+/* CSS สำหรับหน้าจอขนาดเล็ก (mobile layout) */
+@media (max-width: 768px) {
+  .app-header {
+    align-items: left; /* ยืดกลางขนาดหน้าจอ */
+    text-align: left; /* จัดข้อความตรงกลาง */
+  }
+  .car-header {
+    font-size: 8px;
+  }
+  .car-available-container {
+    display: flex;
+    align-items: center; /* ยืดกลางขนาดหน้าจอ */
+  }
+  .search-and-sort {
+    padding-top: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center; /* ยืดกลางขนาดหน้าจอ */    
+    padding-bottom: 10px;
+  }
+
+  .car-list-container {    
+    width: 300%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center; /* ยืดกลางขนาดหน้าจอ */    
+    padding-bottom: 10px;
+    padding-left: 50%;
+  }
+
+  .car-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ยืดกลางขนาดหน้าจอ */
+    padding-bottom: 10px;
+  }
+
+  .cart-popup {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* จัดเนื้อหาตรงกลางตามแนวแกน Y */
+    overflow-y: auto; /* เพิ่มการเลื่อนเนื้อหาเมื่อมีเนื้อหามากเกินไป */
+  }
+}
